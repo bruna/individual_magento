@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Cms Block -->
+    <route url="/F1/feirante/:idFeirante" method="GET">
+        <service class="BrunaVasconcelos\MyModule\Api\FeiranteRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+    <route url="/F1/feirantesearch" method="GET">
+        <service class="BrunaVasconcelos\MyModule\Api\FeiranteRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+    <route url="/F1/feirante" method="POST">
+        <service class="BrunaVasconcelos\MyModule\Api\FeiranteRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+    <route url="/F1/feirante/:id" method="PUT">
+        <service class="BrunaVasconcelos\MyModule\Api\FeiranteRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+    <route url="/F1/feirante/:idFeirante" method="DELETE">
+        <service class="BrunaVasconcelos\MyModule\Api\FeiranteRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+</routes>

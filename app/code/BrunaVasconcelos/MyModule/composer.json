@@ -1,0 +1,21 @@
+{
+    "name": "brunavasconcelos/mymodule",
+    "description": "Cadastro de Feirantes da ACN",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "brunapvasconcelos@gmail.com",
+            "name": "Bruna Vasconcelos"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BrunaVasconcelos\\MyModule\\": ""
+        }
+    }
+}
